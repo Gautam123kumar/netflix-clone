@@ -4,23 +4,25 @@ import "./HomeScreen.css"
 import Nav from './Nav'
 import requests from './Requests'
 import Row from './Row'
+
 function HomeScreen() {
     return (
         <div className="homeScreen">
             <Nav />
             <Banner />
-
-            <Row 
+            <Row
                 title="NETFLIX ORIGINALS" 
-                fetchURL={requests.fetchNetflixOriginals} 
-                isLargeRow={true} /> 
-            <Row title="Trending Now" fetchURL={requests.fetchTrending} />
-            <Row title ="Top Reated" fetchURL ={requests.featchTopRated}/>
-            <Row title ="Action Movies" fetchURL ={requests.featchActionMovies}/>
-            <Row title="Comedy Movies" fetchURL={requests.fetchComedyMovies} /> 
-            <Row title="Horror Movies" fetchURL={requests.fetchHorrorMovies} />
-            <Row title="Romance Movies" fetchURL={requests.fetchRomanceMovies} /> 
-            <Row title="Documentaries" fetchURL={requests.fetchDocumentaries} />
+                fetchUrl={requests.fetchNetflixOriginals}
+                isLargeRow
+            />
+            <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+            <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+            <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+            <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+            <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+            <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+            <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+            
         </div>
     )
 }
