@@ -22,6 +22,8 @@ function ProfileScreen() {
                         <h2>{user.email}</h2>
                         <div className="profileScreen__plans">
                             <h3>Plans</h3>
+                            <h5>Renewal date : {user.date}</h5>
+
                             <button 
                                 onClick={()=>auth.signOut()} className="profileScreen__signOut">
                                 Sign Out
@@ -32,6 +34,6 @@ function ProfileScreen() {
              </div>
         </div>
     )
-}
+} 
 
 export default ProfileScreen
